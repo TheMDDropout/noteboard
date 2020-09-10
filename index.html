@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- general container for post-it notes -->
+    <h1>noteboard</h1>
+    <div id="whiteboard">
+        <!-- post-it notes will be added here via javascript -->
+       
+        <form id="addNoteForm" class="HighImportance" autocomplete="off">
+            <div id="inputTitleContainer">
+                <span id="inputTitle" role="text" contenteditable></span>
+            </div>
+            <div id="inputDescriptionContainer">
+                <span id="inputDescription" role="text" contenteditable></span>
+            </div>
+            <div id="inputImportanceContainer">
+                <div>Importance: </div>
+                <div id="radioItemContainer">
+                    <div class="radioItems">
+                        <input type="radio" id="low" name="importanceLevel" value="low">
+                        <label for="low">Low</label>
+                    </div>
+                    <div class="radioItems">
+                        <input type="radio" id="medium" name="importanceLevel" value="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="radioItems">
+                        <input type="radio" id="high" name="importanceLevel" value="high">
+                        <label for="high">High</label>
+                    </div>
+                </div>
+            </div>
+            <div id="imageContainer">
+                <img src="images/checkmark.svg" alt="" onclick="addNote()" draggable="false">
+                <img src="images/cancel.svg" alt="" onclick="cancel()" draggable="false">
+            </div>
+        </form>
+        <!-- add note container -->
+        <div class="noteContainer" id="noteContainerAddButton">
+            <div class="noteContainerTopBar">
+                <div class="noteContainerTopBarTextAddButton">
+                    <div class="title">Add new note...</div>
+                </div>
+            </div>
+            <div id="addButtonHoverOverlay" onclick="getForm()"> </div>
+            <div class="noteContainerTextSection">
+                <div id="addContainer">
+                    <img id="addButton" src="images/add.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <div>Icons made by <a href="" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+<!-- <div>Icons made by <a href="" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
