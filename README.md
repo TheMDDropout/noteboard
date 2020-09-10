@@ -1,6 +1,8 @@
 # To-Do List
 Mimics sticky notes for daily tasks. Notes are stratified by level of importance, with the most importance tasks showing up on the first row. 
 
+Link: https://themddropout.com/projects/todolist/index.html
+
 ## Instructions
 ##### Adding new notes
 Click on 'Add new note' and add in a title, description, and rate the importance of your task. Finish your note by clicking the checkmark. 
